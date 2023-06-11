@@ -1,14 +1,9 @@
-const canvasSketch = require('canvas-sketch');
+const canvas = document.getElementById('myCanvas');
+const context = canvas.getContext('2d');
 
-const settings = {
-  dimensions: [ 1080, 1080 ]
-};
+canvas.width = 800;
+canvas.height = 800;
 
-const sketch = () => {
-  return ({ context, width, height }) => {
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, width, height);
-  };
-};
-
-canvasSketch(sketch, settings);
+context.fillStyle = 'black';
+context.beginPath();
+context.fillRect(100, 100, 400, 400);
