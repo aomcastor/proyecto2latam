@@ -1,9 +1,9 @@
 const canvas = document.getElementById('myCanvas');
-const context = canvas.getContext('2d');
+const c = canvas.getContext('2d');
 
-canvas.width = 800;
-canvas.height = 800;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-context.fillStyle = 'black';
-context.beginPath();
-context.fillRect(100, 100, 400, 400);
+c.fillStyle = 'black';
+c.beginPath();
+c.fillRect(50, 100, 400, 400);
