@@ -3,43 +3,41 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Daniel Márquez</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
     
 </head>
 <body>
 
-    <header id="top-head">
-        <nav>
-            <ul id="top-nav">
-                <li>Acerca de mí</li>
-                <li>Blog</li>
-                <li>Proyectos</li>
-            </ul>
-        </nav>
+    <nav id="topbar">
+        <ul class="contenedor_links">
+            <li class="link_item"><a class="link">Acerca de mí</a></li>
+            <li class="link_item"><a class="link">Blog</a></li>
+            <li class="link_item"><a class="link">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <header class="encabezado">
+        <div class="contenido">
+            <h1>
+                <span class="small">Bienvenidos</span>
+            </h1>
+            <a href="/editor" class="boton">Escribir un Blog</a>
+        </div>
     </header>
 
-    <aside id="sidebar">
-        <header>
-            <ul id="title">
-                <li>Acerca de mí</li>
-                <li>Blog</li>
-                <li>Proyectos</li>
-            </ul>
-        </header>
-        <section>
-            <ol id="content">
-                <li>Contenido 1</li>
-                <li>Contenido 2</li>
-                <li>Contenido 3</li>
-            </ol>
-        </section>
-        
-    </aside>
+    <section class="seccion_blog">
+        <div class="tarjeta_blog">
+            <img src="img/header.png" class="imagen_blog" alt="" />
+            <h1 class="titulo_blog">Titulo de Prueba</h1>
+            <p class="previa_blog">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.
+                Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam.
+            </p>
+            <a href="/" class="boton leer">Leer Más</a>
+        </div>
 
-    <section id="about"></section>
-    <section id="blog"> </section>
-    <section id="projects"> </section>
+    </section>
 
     <canvas id="myCanvas"></canvas>
     <script src="test01.js"></script>
